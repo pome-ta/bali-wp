@@ -25,7 +25,99 @@
 - 実直につくる
     - 一部コピペで
 
+## 制作メモ
 
+### タグ
+
+[参考サイト](https://qiita.com/maccotsan/items/20c6ea274b0190dc2c05)
+
+- `nav`
+    - リストにする
+    - ヘッダーメニュー、サイドメニュー、パンくずリスト
+``` nav.html
+<nav>
+  <ul>
+    <li><a href='/'>サイトトップ</li>
+    <li><a href='/about'>このサイトについて</li>
+    <li><a href='/contact'>お問い合わせ</li>
+  </ul>
+</nav>
+```
+    - 複数のセクションを置く場合
+        - `section`要素
+        - `aside`要素
+
+
+``` multi.html
+<!-- section -->
+<nav>
+  <section>
+    <h3>カテゴリーから選ぶ</h3>
+    <ul>
+      <li><a href='/category/all'>全て</li>
+      <li><a href='/category/book'>書籍</li>
+      <li><a href='/category/game'>ゲーム</li>
+    </ul>
+  </section>
+  <section>
+    <h3>売り上げランキング</h3>
+    <ul>
+      <li><a href='/ranking/all'>全て</li>
+      <li><a href='/ranking/book'>書籍</li>
+      <li><a href='/ranking/game'>ゲーム</li>
+    </ul>
+  </section>
+</nav>
+
+<!-- aside -->
+<aside>
+  <nav>
+    <h3>カテゴリーから選ぶ</h3>
+    <ul>
+      <li><a href='/category/all'>全て</li>
+      <li><a href='/category/book'>書籍</li>
+      <li><a href='/category/game'>ゲーム</li>
+    </ul>
+  </nav>
+  <nav>
+    <h3>売り上げランキング</h3>
+    <ul>
+      <li><a href='/ranking/all'>全て</li>
+      <li><a href='/ranking/book'>書籍</li>
+      <li><a href='/ranking/game'>ゲーム</li>
+    </ul>
+  </nav>
+</aside>
+```
+
+
+
+
+- `article`
+    - 単独の記事としてふさわしいか？
+``` article.html
+<article>
+  <h1>記事タイトル</h1>
+  <p>本文</p>
+  <section>
+    <h2>この記事へのコメント</h2>
+    <article>
+      <h3>名無しさん</h3>
+      <p>...</p>
+    </article>
+  </section>
+</article>
+```
+
+
+- `section`
+    - 見出しをつける
+``` section.html
+<section>
+  <h1>見出し</h1>
+  <p>本文</p>
+</section>
+```
 
 # CSS
 

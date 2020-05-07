@@ -2,6 +2,7 @@
 
 > 2020/05/07
 
+
 # HTML
 
 ## サイト構成
@@ -142,6 +143,22 @@
 ### reboot
 
 とりあえず、reboot が慣れてるので入れてる
+
+### debug.css
+
+[CSSで実装したレイアウトの構造や階層を簡単に確認できる、私のお気に入りのCSSハック -My favorite CSS hack](https://coliss.com/articles/build-websites/operation/css/my-favorite-css-hack-by-gajus.html)
+
+
+これを追加
+
+
+コピペをしてきたら、
+
+`:` が謎に全角になっているところがあったので、直した
+
+
+直す前でも普通に読み込んでたけどね
+
 
 
 ## 想定

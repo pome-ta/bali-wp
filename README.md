@@ -34,6 +34,8 @@
 - `nav`
     - リストにする
     - ヘッダーメニュー、サイドメニュー、パンくずリスト
+
+
 ``` nav.html
 <nav>
   <ul>
@@ -44,9 +46,11 @@
 </nav>
 ```
 
+
     - 複数のセクションを置く場合
         - `section`要素
         - `aside`要素
+
 
 
 ``` multi.html
@@ -96,6 +100,9 @@
 
 - `article`
     - 単独の記事としてふさわしいか？
+
+
+
 ``` article.html
 <article>
   <h1>記事タイトル</h1>
@@ -113,6 +120,10 @@
 
 - `section`
     - 見出しをつける
+
+
+
+
 ``` section.html
 <section>
   <h1>見出し</h1>

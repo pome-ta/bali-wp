@@ -1,4 +1,0 @@
-﻿  font-family: 'Segoe UI', 'Open Sans', 'Roboto',YuGothic, "Yu Gothic", 游ゴシック体, 游ゴシック, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Roboto, メイリオ, Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
-
-
-フォント指定

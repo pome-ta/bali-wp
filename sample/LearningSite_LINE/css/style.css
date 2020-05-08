@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+*{
+    border: solid 1px rgba(255,0,0,.25);
+}
+
+body {
+  font-family: 'Segoe UI', 'Open Sans', 'Roboto',YuGothic, "Yu Gothic", 游ゴシック体, 游ゴシック, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Roboto, メイリオ, Meiryo, "ＭＳ Ｐゴシック", Osaka, "MS PGothic", Arial, Helvetica, Verdana, sans-serif;
+}
+
+h1, h2, h3, h4, p, li, a, span {
+  line-height: 1.5;
+  letter-spacing: .075rem;
+  font-weight: normal;
+  font-feature-settings: "palt";
+}
+
+/* HeroImg
+--------------- */
+.hero-Img ,.hero-Contents {
+  width: 100%;
+  height: 100vh;
+}
+.hero-Img{
+  margin:0;
+}
+.hero-Contents nav{
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  overflow: auto;
+}
+.hero-Contents a{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.top-Hero{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* アニメーション */
+  animation-name: top-color;
+  animation-duration: 1s;
+  animation-delay: 3.5s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes top-color{
+  from{background-color: #fff;}
+  to{background-color: #83BAD6;}
+}
+
+
+.tagline{
+  color: #83BAD6;
+  text-align:center;
+  /* アニメーション */
+  animation-name: line-text;
+  animation-duration: 3s;
+  animation-delay: 6s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes line-text{
+  from{color: #83BAD6;}
+  to{color: #fff;}
+}
+
+.tagline h1,h2{
+  line-height: 1;
+}
+
+.tagline h1{
+  font-size: 10vw;
+  font-weight: 600;
+  margin-top: -4rem;
+  /* アニメーション */
+  animation-name: tag-text-1;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+@keyframes tag-text-1{
+  from{text-shadow: 1px -1px 0 rgba(0,0,0,0);}
+  to{text-shadow: 1px -1px 0 rgba(0,0,0,.5);}
+}
+
+.tagline h2{
+  font-size: 4.5vw;
+  /* アニメーション */
+  animation-name: tag-text-2;
+  animation-duration: .5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tag-text-2{
+  from{text-shadow: 1px -1px 0 rgba(0,0,0,0);}
+  to{text-shadow: 1px -1px 0 rgba(0,0,0,.5);}
+}
+
+.tagline h1::after{
+  content: '';
+  display: block;
+  border-bottom: solid .25rem;
+  border-radius: 1rem;
+  margin: 2rem 16vw 2.5rem;
+  /* アニメーション */
+  animation-name: tag-box;
+  animation-duration: .5s;
+  animation-delay: 3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes tag-box{
+  from{box-shadow: 1px -1px 0 rgba(0,0,0,0);}
+  to{box-shadow: 1px -1px 0 rgba(0,0,0,.5);}
+}
+
+
+.hero-Contents span{
+  z-index: 1;
+  position: absolute;
+  bottom: 1.5rem;
+  overflow: auto;
+  color: #fff;
+}
+
+.scl{
+  width: 2rem;
+  height: 3rem;
+  margin: .5rem auto 0;
+  border: solid 1px;
+  border-radius: 1rem;
+}
+.ball::after{
+  content: '●';
+  display: block;
+  text-align:center;
+  animation-name: ball-down;
+  animation-duration: .75s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes ball-down{
+  from{margin-top: 0;}
+  45%{margin-top: 0;}
+  95%{margin-top: 1rem;}
+  to{margin-top: 1.25rem;}
+}
+
+
+/* header
+--------------- */
+header {
+  display: flex;
+  align-items: baseline;
+  background-color: #f6f6f6;
+}
+header figure{
+  margin:0;
+}
+
+nav{
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav li{
+  width: 100%;
+  margin: 0;
+  text-align:center;
+  list-style-type: none;
+}
+nav a{
+  display: block;
+  padding: 1.25rem 2rem;
+
+}
+
+
+.navlink {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.navlink::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .5s;
+}
+
+.navlink:hover::after {
+  transform: scale(1, 1);
+
+}

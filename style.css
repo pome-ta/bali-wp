@@ -9,36 +9,51 @@ Description: 取り急ぎの作成
 
 
 body {
-    width: 100%;
-    font-family: "Helvetica Neue",
-        Arial,
-        "Hiragino Kaku Gothic ProN",
-        "Hiragino Sans",
-        Meiryo,
-        sans-serif;
+  width: 100%;
+  font-family: "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif;
+}
+
+h1, h2, h3, h4, p, li, a, span {
+  line-height: 1.5;
+  letter-spacing: .075rem;
+  font-weight: normal;
+  font-feature-settings: "palt";
 }
 
 
+/* header
+--------------- */
 header {
-    background: #531621;
-    font-size: .92rem;
+  width: 100%;
+  background: #531621;
+  font-size: .92rem;
+  margin:0;
 }
 .flexbox{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 
 .nav-con {
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav-con li {
-    list-style: none;
+  list-style: none;
+  margin: 0;
+  text-align:center;
 }
 
 .login {
-    display: flex;
+  display: flex;
 }

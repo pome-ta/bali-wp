@@ -46,7 +46,7 @@ header {
   margin:0;
 }
 .flexbox{
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -54,7 +54,7 @@ header {
 
 
 .nav-con {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -66,6 +66,6 @@ header {
 }
 
 .login {
-  width: 100%;
+  width: auto;
   display: flex;
 }

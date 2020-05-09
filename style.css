@@ -56,4 +56,5 @@ header {
 
 .login {
   display: flex;
+  width: 100%;
 }

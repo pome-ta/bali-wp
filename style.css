@@ -8,6 +8,11 @@ Description: 取り急ぎの作成
 @import url("reboot.css");
 
 
+/* Pythonista 用 */ 
+* {
+  font-size:.64rem;
+}
+
 body {
   width: 100%;
   font-family: "Helvetica Neue",
@@ -26,8 +31,14 @@ h1, h2, h3, h4, p, li, a, span {
 }
 
 
+
+
 /* header
 --------------- */
+h1 img {
+  width: 6rem;
+}
+
 header {
   width: 100%;
   background: #531621;
@@ -35,7 +46,7 @@ header {
   margin:0;
 }
 .flexbox{
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -43,7 +54,7 @@ header {
 
 
 .nav-con {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: space-around;
 }
@@ -55,6 +66,7 @@ header {
 }
 
 .login {
+  width: auto;
   display: flex;
   width: 100%;
 }
